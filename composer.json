@@ -1,0 +1,40 @@
+{
+  "name": "baimuze/think-system",
+  "description": "thinkphp run base",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "baimuze",
+      "email": "3184123838@qq.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/core/helper.php"
+    ],
+    "psr-4": {
+      "BaiMuZe\\Admin\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "BaiMuZe\\library\\AppServer"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "ext-gd": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-zlib": "*",
+    "ext-iconv": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "topthink/framework": "^6.0",
+    "topthink/think-migration": "^3.0"
+  }
+}
