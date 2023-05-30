@@ -41,8 +41,6 @@
     "ext-zlib": "*",
     "ext-iconv": "*",
     "ext-openssl": "*",
-    "ext-mbstring": "*",
-    "topthink/framework":"^6.1.0",
-    "topthink/think-migration": "^3.0"
+    "ext-mbstring": "*"
   }
 }
