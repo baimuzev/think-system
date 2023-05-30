@@ -28,7 +28,7 @@
     },
     "plugin": {
       "init": {
-        "src/core/worker.php": "config/base.php"
+        "src/core/config.php": "config/base.php"
       }
     }
   },
