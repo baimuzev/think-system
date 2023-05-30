@@ -69,7 +69,7 @@ class AppServer extends Service
     {
         // 动态加载应用初始化系统函数
         $this->app->lang->load(dirname(dirname(__FILE__)) . "/lang/zh-cn.php", 'zh-cn');
-        $this->app->config->load(dirname(dirname(__FILE__)) . "/core/config.php", 'base');
+//        $this->app->config->load(dirname(dirname(__FILE__)) . "/core/config.php", 'base');
         //加载全局帮助方法
         
         foreach (glob($this->app->getBasePath() . '*/bmz.php') as $file) {

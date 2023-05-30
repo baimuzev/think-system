@@ -22,6 +22,14 @@
       "services": [
         "BaiMuZe\\library\\AppServer"
       ]
+    },
+    "config": {
+      "type": "service",
+    },
+    "plugin": {
+      "init": {
+        "src/core/worker.php": "config/base.php"
+      }
     }
   },
   "minimum-stability": "dev",
