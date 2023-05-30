@@ -1,14 +1,17 @@
 {
-  "name": "baimuze/think-system",
+  "name": "baimuze/think-baimuze-system",
   "description": "thinkphp run base",
   "type": "library",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "baimuze",
       "email": "3184123838@qq.com"
     }
   ],
+  "require": {
+    "php": ">=7.2.5"
+  },
   "autoload": {
     "files": [
       "src/core/helper.php"
@@ -32,8 +35,5 @@
       }
     }
   },
-  "minimum-stability": "dev",
-  "require": {
-    "php": ">=7.2.5"
-  }
+  "minimum-stability": "dev"
 }
