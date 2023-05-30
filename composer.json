@@ -34,13 +34,6 @@
   },
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.1",
-    "ext-gd": "*",
-    "ext-curl": "*",
-    "ext-json": "*",
-    "ext-zlib": "*",
-    "ext-iconv": "*",
-    "ext-openssl": "*",
-    "ext-mbstring": "*"
+    "php": ">=7.2.5"
   }
 }
