@@ -128,7 +128,18 @@ class Application extends BaseServer
         ];
         return is_null($name) ? $data : ($data[$name] ?? $default);
     }
-
+    /**
+     * 清理运行缓存
+     * @param boolean $force 清理目录
+     * @return boolean
+     */
+    public static function clear(bool $force = true): bool
+    {
+//        $data = static::get();
+//        AdminService::clear() && AppServer::$sapp->cache->clear();
+//        $force && AppServer::$sapp->console->call('clear', ['--dir']);
+//        return static::set($data['mode'], $data['appmap'], $data['domain']);
+    }
     /**
      * 获取实时运行环境
      * @author 白沐泽

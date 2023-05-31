@@ -101,7 +101,20 @@ if (!function_exists('shortUrl')) {
         return \BaiMuZe\utility\Url::shortUrl($url, $vars, $suffix, $domain);
     }
 }
-
+if (!function_exists('syspath')) {
+    /**
+     * 获取文件绝对路径
+     * @param string $name 文件路径
+     * @param ?string $root 程序根路径
+     * @return string
+     */
+    function syspath(string $name = '', ?string $root = null): string
+    {
+        if (is_null($root)) $root = AppServer::$sapp->getRootPath();
+        $attr = ['/' => DIRECTORY_SEPARATOR, '\\' => DIRECTORY_SEPARATOR];
+        return rtrim($root, '\\/') . DIRECTORY_SEPARATOR . ltrim(strtr($name, $attr), '\\/');
+    }
+}
 if (!function_exists('arrayToJson')) {
     /**
      * 转换数组为JSON字符串

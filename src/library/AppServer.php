@@ -5,6 +5,7 @@ namespace BaiMuZe\Admin\library;
 
 
 use BaiMuZe\Admin\command\Curd;
+use BaiMuZe\Admin\command\Publish;
 use BaiMuZe\Admin\utility\Security;
 use think\App;
 use think\app\MultiApp;
@@ -36,6 +37,7 @@ class AppServer extends Service
         // 注册 BaiMuZe 指令
         $this->commands([
             Curd::class,
+            Publish::class
         ]);
         // 服务初始化处理
         $this->app->event->listen('HttpRun', function (Request $request) {
