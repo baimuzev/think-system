@@ -69,7 +69,7 @@ class Controller extends stdClass
     public function __construct(App $app)
     {
         $this->app = $app;
-        $this->app->bind('BaiMuZe\core\Controller', $this);
+        $this->app->bind('BaiMuZe\Admin\core\Controller', $this);
         $this->request = $app->request;//初始化request请求
         $controllername = Str::parseName($this->request->controller());
         if (in_array($this->request->action(), get_class_methods(__CLASS__))) {
