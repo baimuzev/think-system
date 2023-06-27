@@ -2,7 +2,7 @@
   "name": "baimuze/think-baimuze-system",
   "description": "thinkphp run base",
   "type": "library",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "baimuze",
