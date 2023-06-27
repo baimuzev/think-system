@@ -3,7 +3,7 @@
 
 namespace BaiMuZe\Admin\library;
 
-use BaiMuZe\Admin\model\Ability;
+use BaiMuZe\Admin\model\Ability as AbilityModel;
 use BaiMuZe\Admin\core\Controller;
 use BaiMuZe\Admin\model\AdminAuth;
 use BaiMuZe\Admin\utility\Html;
