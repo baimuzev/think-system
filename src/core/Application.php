@@ -135,6 +135,7 @@ class Application extends BaseServer
      */
     public static function clear(bool $force = true): bool
     {
+        return true;
 //        $data = static::get();
 //        AdminService::clear() && AppServer::$sapp->cache->clear();
 //        $force && AppServer::$sapp->console->call('clear', ['--dir']);

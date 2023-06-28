@@ -25,7 +25,7 @@
   "extra": {
     "think": {
       "services": [
-        "BaiMuZe\\library\\AppServer"
+        "BaiMuZe\\Admin\\library\\AppServer"
       ]
     },
     "config": {
