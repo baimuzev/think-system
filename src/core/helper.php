@@ -1,6 +1,6 @@
 <?php
 
-use BaiMuZe\library\AppServer;
+use BaiMuZe\Admin\library\AppServer;
 
 if (!function_exists('BmzLang')) {
 
@@ -58,7 +58,7 @@ if (!function_exists('arrayHas')) {
      */
     function arrayHas($array, $key)
     {
-        return \BaiMuZe\utility\Arr::has($array, $key);
+        return \BaiMuZe\Admin\utility\Arr::has($array, $key);
     }
 }
 if (!function_exists('token')) {
@@ -331,7 +331,7 @@ if (!function_exists('write_xls')) {
      */
     function write_xls($data = array(), $title = array(), $filename)
     {
-        require_once root_path() . '/extend/BaiMuZe/library/excel/PHPExcel.php';
+        require_once root_path() . '/vendor/BaiMuZe/Admin/library/excel/PHPExcel.php';
         $excel = new PHPExcel();
         $sheet = $excel->getActiveSheet();
         $cols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
