@@ -37,7 +37,7 @@ class Token
         }
         if (true === $name || !isset(self::$instance[$name])) {
             $class = false === strpos($type, '\\') ?
-                '\\BaiMuZe\\library\\token\\dirver\\' . ucwords($type) :
+                '\\BaiMuZe\\Admin\\library\\token\\dirver\\' . ucwords($type) :
                 $type;
             //登记初始化信息
             Log::record('[ TOKEN ] INIT ' . $type, 'info');

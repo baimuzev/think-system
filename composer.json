@@ -33,7 +33,10 @@
     },
     "plugin": {
       "init": {
-        "src/core/config.php": "config/base.php"
+        "src/init/config.php": "config/base.php"
+      },
+      "copy": {
+        "src/init/index.php": "!public/index.php"
       }
     }
   },
