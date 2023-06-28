@@ -45,7 +45,7 @@ if (!function_exists('ability')) {
      */
     function ability($ability)
     {
-        return \BaiMuZe\library\Auth::check(str_replace('.html', '', substr(strLower($ability), 1)), 2);
+        return \BaiMuZe\Admin\library\Auth::check(str_replace('.html', '', substr(strLower($ability), 1)), 2);
     }
 }
 if (!function_exists('arrayHas')) {
@@ -98,7 +98,7 @@ if (!function_exists('shortUrl')) {
      */
     function shortUrl(string $url = '', array $vars = [], $suffix = true, $domain = false)
     {
-        return \BaiMuZe\utility\Url::shortUrl($url, $vars, $suffix, $domain);
+        return \BaiMuZe\Admin\utility\Url::shortUrl($url, $vars, $suffix, $domain);
     }
 }
 if (!function_exists('syspath')) {
@@ -151,7 +151,7 @@ if (!function_exists('syconfig')) {
      */
     function syconfig($label, $key, $default = null)
     {
-        return \BaiMuZe\library\ConfigServer::get($label, $key, $default = null);
+        return \BaiMuZe\Admin\library\ConfigServer::get($label, $key, $default = null);
     }
 }
 if (!function_exists('encode')) {
