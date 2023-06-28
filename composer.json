@@ -1,7 +1,7 @@
 {
   "name": "baimuze/think-baimuze-system",
   "description": "thinkphp run base",
-  "type": "library",
+  "type": "baimuze-plugin",
   "license": "Apache-2.0",
   "authors": [
     {
